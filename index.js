@@ -23,3 +23,15 @@ tabs.forEach((tab) => {
     });
   });
 });
+
+// modal
+const signupBtn = document.querySelector('#signup');
+const modal = document.querySelector('.modal');
+const closeModalBtn = document.querySelector('.modal-close');
+
+signupBtn.addEventListener('click', () => {
+  modal.classList.add('is-active');
+});
+closeModalBtn.addEventListener('click', () => {
+  modal.classList.remove('is-active');
+});
